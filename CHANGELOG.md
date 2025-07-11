@@ -16,3 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - On iOS on opening of some Dapps there is download file pop up (https://github.com/MetaMask/react-native-webview-mm/pull/63)
+
+[Unreleased]: https://github.com/MetaMask/core/compare/@metamask/address-book-controller@6.0.3...HEAD
+[14.2.2]: https://github.com/MetaMask/core/compare/@metamask/address-book-controller@6.0.2...@metamask/address-book-controller@6.0.3
