@@ -5,11 +5,10 @@ on:
     types: [published]
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   publish-release:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout and setup environment
@@ -18,7 +17,7 @@ jobs:
           is-high-risk-environment: true
       - uses: MetaMask/action-publish-release@v3
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
       - run: yarn build
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
